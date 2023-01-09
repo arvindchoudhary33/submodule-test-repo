@@ -1,0 +1,161 @@
+.userManagementMainContainer {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+.heading {
+  min-width: 600px;
+  /* min-width: 90%; */
+  border-radius: 4px;
+  box-shadow: var(--lowLiftBoxshadow);
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userDataTable {
+  /* min-width: 90%; */
+  min-width: 600px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: var(--lowLiftBoxshadow);
+  border-radius: 4px;
+  padding: 10px;
+  padding-top: 0px;
+  overflow: auto;
+  margin: 0;
+}
+
+.userAddContainer {
+  min-width: 325px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+  .commonInput {
+    width: 100%;
+  }
+}
+.dialogHeading {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    font-size: 0.8em;
+    color: red;
+    cursor: pointer;
+  }
+}
+.userDataTable {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* padding-top: 0px; */
+  .userDataTableHeading {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 43px;
+    z-index: 5;
+    padding: 10px;
+    padding-top: 15px;
+    margin: 0;
+    background-color: white;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 80px;
+      max-width: 80px;
+    }
+    .actionsHeading {
+      margin: auto;
+      min-width: 138px;
+    }
+  }
+}
+.userDataContainer {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 0;
+  i {
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .editIcon {
+    color: green;
+  }
+  .deleteIcon {
+    color: red;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.action {
+  display: flex;
+}
+.name {
+  /* min-width: 60px; */
+  width: 75px;
+  /* font-size: 0.9em; */
+  overflow: hidden;
+  word-break: break-word;
+  text-align: center;
+}
+.role {
+  width: 75px;
+  overflow: hidden;
+  word-break: break-word;
+  text-align: center;
+}
+.errorMessage {
+  min-width: 100%;
+  color: red;
+  font-size: 0.8em;
+  padding-left: 3px;
+}
+
+.userRoleSelect {
+  padding: 8px;
+  border: 1px solid lightgray;
+  margin-bottom: 5px;
+}
+.passwordChangeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+}
+.passwordCheckBoxLabel {
+  user-select: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: gray;
+}
+.loadingSpinner {
+  text-align: center;
+  i {
+    font-size: 1.2em;
+  }
+}
